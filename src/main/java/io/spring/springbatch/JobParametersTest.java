@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class JobInstanceConfig implements ApplicationRunner {
+public class JobParametersTest implements ApplicationRunner {
 
     private final JobLauncher jobLauncher;
     private final Job job;
