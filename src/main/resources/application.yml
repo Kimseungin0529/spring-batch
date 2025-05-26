@@ -37,7 +37,9 @@ spring:
 
   batch:
     jdbc:
-      initialize-schema: always
+      initialize-schema: always # JPA Auto ddl 과 유사하게 내부 배치 테이블 스크립트 동작 설정
+    job:
+      enabled: false # 스프링 실행 시, 빈으로 등록된 배치 실행 여부 설정
 
 
 logging:

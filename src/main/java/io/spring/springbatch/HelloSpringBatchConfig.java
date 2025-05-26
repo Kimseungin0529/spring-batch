@@ -51,7 +51,7 @@ public class HelloSpringBatchConfig {
                 log.info("=================================");
                 log.info("Spring Batch Test Success");
                 log.info("=================================");
-                return RepeatStatus.FINISHED; // 작업에 대한 Status 명시
+                return RepeatStatus.FINISHED; // 작 업에 대한 Status 명시
             }
         };
     }
