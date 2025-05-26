@@ -24,10 +24,6 @@ spring:
   config:
     activate:
       on-profile: mysql
-#  jpa:
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.MySQL8Dialect
 
   datasource:
     url: jdbc:mysql://localhost:3306/batch?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
@@ -38,6 +34,8 @@ spring:
   batch:
     jdbc:
       initialize-schema: always
+    job:
+      enabled: false
 
 
 logging:
